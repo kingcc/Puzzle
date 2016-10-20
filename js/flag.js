@@ -1,4 +1,8 @@
-//http://cdn.bootcss.com/jquery/3.1.1/jquery.js
+/**
+ * Puzzle@1.0.0 <//github.com/kingcc/Puzzle.git>
+ * Author: kingcc <laikinfox@gmail.com>
+ * licence: MIT
+ **/
 $(function() {
   $('body').mousedown(function(e1) {
     $('body').one('mouseup', function(e2) {
@@ -11,7 +15,7 @@ $(function() {
           var selection = window.getSelection();
           var textObj = $(selection.getRangeAt(0).commonAncestorContainer.parentElement);
           var selected = selection.toString();
-          var selectedText = '<span id="puzzle">' + selected + '</span>';
+          var selectedText = '<span class="puzzle-select">' + selected + '</span>';
 
           var start = selection.anchorOffset;
           var end = selection.focusOffset;

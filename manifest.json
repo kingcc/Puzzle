@@ -1,22 +1,28 @@
 {
-	"manifest_version": 2,
-	"name": "Puzzle",
-	"version": "1.0",
-	"description": "A Chrome elegant translate extension.",
-	"icons": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
+  "name": "Puzzle",
+  "version": "1.0",
+  "description": "A Chrome elegant translate extension.",
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "css": ["css/flag.css"],
+    "js": ["js/jquery.min.js", "js/flag.js"]
+  }],
+  "browser_action": {
+    "default_icon": {
+      "19": "img/icon.png",
+      "38": "img/icon.png"
     },
-	"browser_action": {
-		"default_icon": {
-            "19": "images/icon19.png",
-            "38": "images/icon38.png"
-        },
-		"default_title": "Puzzle",
-		"default_popup": "popup.html"
-	},
-	"permissions": [
-        "http://fanyi.youdao.com/openapi.do?keyfrom=Puzzle&key=1892828066&type=data&doctype=json&version=1.1&q=*"
-    ]
+    "default_title": "Puzzle",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "manifest_version": 2
 }
