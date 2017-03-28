@@ -3,13 +3,11 @@
   "version": "1.0",
   "description": "A Chrome elegant translate extension.",
   "permissions": [
-    "tabs",
-    "*://*/*"
+    "tabs", "http://*/*", "https://*/*", "background"
   ],
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "css": ["css/flag.css"],
-    "js": ["js/jquery.min.js", "js/flag.js"]
+    "js": ["js/insert.js"]
   }],
   "browser_action": {
     "default_icon": {
