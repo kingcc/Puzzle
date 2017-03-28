@@ -1,6 +1,6 @@
 # Puzzle
 
-####`A Chrome elegant translate extension.`
+`A Chrome elegant translate extension.`
 
 ![logo](./img/icon.png)
 
