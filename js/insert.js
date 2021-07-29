@@ -54,7 +54,7 @@ function getResult(req) {
   var
     js = document.createElement('script'),
     head = document.getElementsByTagName('head')[0];
-  js.src = 'https://fanyi.youdao.com/openapi.do?keyfrom=Puzzle&key=1892828066&type=data&doctype=jsonp&callback=show&version=1.1&q=' + req;
+  js.src = 'https://fanyi.youdao.com/openapi.do?keyfrom=Puzzle&key=<key>&type=data&doctype=jsonp&callback=show&version=1.1&q=' + req;
   head.appendChild(js);
 }
 
